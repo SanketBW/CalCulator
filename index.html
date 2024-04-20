@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Calculator</h2>
+    <div class="main">
+        <div class="parent">
+            <form>
+                <div class="data">
+                    <input type="text" name="op" id="opt" disabled>
+                </div>
+                <div>
+                    <input type="button" name="operator" value="AC" class="btn" onclick="op.value = ''">
+                    <input type="button" name="operator" value="C" class="btn"
+                        onclick="op.value = op.value.slice(0,-1)">
+                    <input type="button" name="operator" value="%" class="btn" onclick="op.value += '%'">
+                    <input type="button" name="operator" value="/" class="btn" onclick="op.value += '/'">
+                </div>
+                <div>
+                    <input type="button" name="num" value="7" class="btn" onclick="op.value += '7'">
+                    <input type="button" name="num" value="8" class="btn" onclick="op.value += '8'">
+                    <input type="button" name="num" value="9" class="btn" onclick="op.value += '9'">
+                    <input type="button" name="operator" value="X" class="btn" onclick="op.value += '*'">
+                </div>
+                <div>
+                    <input type="button" name="num" value="4" class="btn" onclick="op.value += '4'">
+                    <input type="button" name="num" value="5" class="btn" onclick="op.value += '5'">
+                    <input type="button" name="num" value="6" class="btn" onclick="op.value += '6'">
+                    <input type="button" name="operator" value="-" class="btn" onclick="op.value += '-'">
+                </div>
+                <div>
+                    <input type="button" name="num" value="1" class="btn" onclick="op.value += '1'">
+                    <input type="button" name="num" value="2" class="btn" onclick="op.value += '2'">
+                    <input type="button" name="num" value="3" class="btn" onclick="op.value += '3'">
+                    <input type="button" name="operator" value="+" class="btn" onclick="op.value += '+'">
+                </div>
+                <div>
+                    <input type="button" name="num" value="0" class="btn" onclick="op.value += '0'">
+                    <input type="button" name="opt" value="." class="btn" onclick="op.value += '.'">
+                    <input type="button" name="operator" value="=" class="btn1" onclick="op.value =eval(op.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
